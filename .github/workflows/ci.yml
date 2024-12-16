@@ -1,0 +1,14 @@
+name: ci
+
+on:
+  workflow_call:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Run tests
+        run: |
+          docker run --rm -v $(pwd):/workdir ghcr.io/dodolia907/latex:main sample.tex
