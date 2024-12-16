@@ -13,5 +13,5 @@ docker run --rm -v "${PWD}:/workdir" ghcr.io/dodolia907/latex:main <your_tex_fil
 Fedora, Oracle Linux, RHELなどの場合, Podmanが便利です.
 ```bash
 $ sudo dnf install -y podman
-$ podman run --rm ghcr.io/dodolia907/latex:main <your_tex_file>.tex
+$ podman run --rm -v $(pwd):/workdir ghcr.io/dodolia907/latex:main <your_tex_file>.tex
 ```
