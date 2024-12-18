@@ -11,7 +11,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: dodolia907/latex
+  IMAGE_NAME: ghcr.io/dodolia907/latex
 
 jobs:
   build:
